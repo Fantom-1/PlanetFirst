@@ -12,9 +12,9 @@ export default function Overview({ projects, onOpen }) {
   const completedCount = projects.filter((p) => p.status === "completed").length;
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto ">
       {/* Stats Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6 font-large text-2xl">
         <StatCard number={projects.length} label="Total Projects" />
         <StatCard number={completedCount} label="Completed" />
         <StatCard number="1,247" label="Total Emissions (tCO₂eq)" />

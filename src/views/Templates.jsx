@@ -30,7 +30,7 @@ export default function Templates({ onCreate }) {
                 <div className="text-sm text-gray-600">{t.description}</div>
               </div>
               <div>
-                <button className="px-3 py-2 bg-indigo-600 text-white rounded" onClick={() => onCreate && onCreate(t.template)}>Use Template</button>
+                <button className="px-3 py-2 bg-[rgb(9,105,218)] text-white rounded" onClick={() => onCreate && onCreate(t.template)}>Use Template</button>
               </div>
             </div>
           </div>

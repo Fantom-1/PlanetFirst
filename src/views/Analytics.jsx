@@ -216,7 +216,7 @@ export default function Analytics({ projects = [] }) {
           <button
             key={t.key}
             onClick={() => setActiveTab(t.key)}
-            className={`px-3 py-1 rounded ${activeTab === t.key ? "bg-indigo-600 text-white" : "bg-gray-100 text-gray-700"}`}
+            className={`px-3 py-1 rounded ${activeTab === t.key ? "bg-[rgb(9,105,218)] text-white" : "bg-gray-100 text-gray-700"}`}
           >
             {t.label}
           </button>

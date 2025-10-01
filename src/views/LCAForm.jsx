@@ -18,7 +18,7 @@ const FormStepper = ({ step, onNext, onPrev, isLast, children }) => (
         </button>
         <button
           onClick={onNext}
-          className="px-4 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700 font-semibold"
+          className="px-4 py-2 bg-[#007FFF] text-white rounded shadow hover:bg-[rgb(9,105,218)] font-semibold"
         >
           {isLast ? "Generate Assessment Report" : `Next →`}
         </button>
@@ -65,7 +65,7 @@ const ProgressBar = ({ currentStep }) => {
                              <div className={`
                                 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold border-2 flex-shrink-0 transition-all
                                 ${isCompleted ? 'bg-green-600 text-white border-green-700' : ''}
-                                ${isActive ? 'bg-indigo-600 text-white border-indigo-700' : ''}
+                                ${isActive ? 'bg-[rgb(9,105,218)] text-white border-[rgb(9,105,218)]' : ''}
                                 ${!isCompleted && !isActive ? 'bg-white text-gray-400 border-gray-300' : ''}
                             `}>
                                 {stepNumber}
@@ -73,7 +73,7 @@ const ProgressBar = ({ currentStep }) => {
                             <span className={`
                                 ml-2 text-sm hidden sm:block
                                 ${isCompleted ? 'text-gray-900' : 'text-gray-500'}
-                                ${isActive ? 'font-bold text-indigo-600' : 'font-medium'}
+                                ${isActive ? 'font-bold text-[rgb(9,105,218)]' : 'font-medium'}
                             `}>
                                 {label}
                             </span>
